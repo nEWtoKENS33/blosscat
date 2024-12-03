@@ -1,0 +1,1838 @@
+.body {
+  background-color: #000;
+  animation: ScreenEffect 0.044s ease infinite;
+}
+
+@keyframes ScreenEffect {
+  0% { opacity: .75 }
+  50% { opacity: 1 }
+  100% { opacity: .85 }
+}
+
+.arcace_border {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.top_h_right {
+  width: auto;
+  height: 50px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.top_v_right {
+  width: 50px;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.image {
+  width: 50px;
+  height: 0;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.top_v_left {
+  width: 50px;
+}
+
+.top_h_left {
+  height: 50px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.bottom_h_right {
+  height: 50px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.bottom_v_right {
+  width: 50px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.bottom_v_left {
+  width: 50px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.bttom_h_right {
+  height: 50px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.top_border {
+  z-index: -1;
+  width: 100%;
+  height: 37px;
+  background-color: #402e5b;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.bottom_border {
+  z-index: -1;
+  width: 100%;
+  height: 37px;
+  background-color: #402e5b;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.left_border {
+  z-index: -1;
+  width: 37px;
+  height: 100vh;
+  background-color: #402e5b;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.right_border {
+  z-index: -1;
+  width: 37px;
+  height: 100vh;
+  background-color: #402e5b;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.div-block {
+  width: 100%;
+  height: 100vh;
+  position: static;
+}
+
+.arcade_background {
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.bg_square_mask {
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 13%, #000 60%);
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.bg_square {
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  opacity: .6;
+  background-image: url('../images/bg_square.svg');
+  background-position: 50%;
+  background-size: 30px 30px;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.start_menu {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.discover_content {
+  width: 380px;
+  height: 380px;
+  background-color: rgba(11, 5, 22, .8);
+  border: 1px solid #8158be;
+  border-radius: 17px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+}
+
+.logo_big {
+  width: 350px;
+}
+
+.start_button {
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 60px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.start_button:hover {
+  color: #fed845;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.menu {
+  width: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.tokenomics {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.tokenomics:hover {
+  color: #d285ff;
+}
+
+.menu_links {
+  width: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  display: none;
+}
+
+.discover {
+  color: #d285ff;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.discover:hover {
+  color: #d285ff;
+}
+
+.logo_small {
+  width: 80px;
+  position: absolute;
+  top: 13%;
+  bottom: auto;
+  left: 50%;
+  right: auto;
+}
+
+.start_content {
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 rgba(0, 0, 0, 0);
+  border-radius: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.team {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.team:hover {
+  color: #d285ff;
+}
+
+.presale {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.presale:hover {
+  color: #d285ff;
+}
+
+.rewards {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.rewards:hover {
+  color: #d285ff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.paragraph {
+  color: #d285ff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+}
+
+.para_mobile {
+  color: #d285ff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  display: none;
+}
+
+.tokenomics_content, .team_content, .presale_content, .rewards_content {
+  width: 380px;
+  height: 380px;
+  background-color: rgba(11, 5, 22, .8);
+  border: 1px solid #8158be;
+  border-radius: 17px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: none;
+}
+
+.menu_links_mobile {
+  flex-direction: column;
+  align-items: flex-start;
+  display: none;
+}
+
+.discover_mobile {
+  color: #d285ff;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.discover_mobile:hover {
+  color: #d285ff;
+}
+
+.tokemomics_mobile {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.tokemomics_mobile:hover {
+  color: #d285ff;
+}
+
+.team_mobile {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.team_mobile:hover {
+  color: #d285ff;
+}
+
+.presale_mobile {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.presale_mobile:hover {
+  color: #d285ff;
+}
+
+.rewards_mobile {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.rewards_mobile:hover {
+  color: #d285ff;
+}
+
+.menu_left {
+  z-index: 500;
+  align-items: center;
+  margin-left: 100px;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.section_content {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.content_discover {
+  width: 550px;
+  height: 400px;
+  background-color: rgba(19, 10, 35, .84);
+  border: 1px solid #6f3baa;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.header_logo {
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.retropepe_logo {
+  width: 85px;
+}
+
+.socials {
+  z-index: 500;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 100px;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.soc {
+  width: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.div-block-5 {
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.image-3 {
+  z-index: 20;
+  width: 180px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.image-4, .image-5 {
+  width: 180px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.welcome {
+  color: #d285ff;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-weight: 400;
+  display: flex;
+}
+
+.discover_para {
+  color: #d285ff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: VT323, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.section_main {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: relative;
+}
+
+.pepe_discover {
+  z-index: 50;
+  width: 250px;
+  cursor: none;
+  display: block;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+  transform: translate(-50%);
+}
+
+.content_tokenomics {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 solid #6f3baa;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  display: none;
+  position: relative;
+}
+
+.image-6 {
+  width: 250px;
+  height: 250px;
+  display: none;
+}
+
+.tokenomics_data {
+  height: 400px;
+  background-color: rgba(19, 10, 35, .84);
+  border: 1px solid #6f3baa;
+  border-radius: 500px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 59px;
+  padding-bottom: 59px;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.tokenomics_info {
+  color: #d285ff;
+  font-family: VT323, sans-serif;
+  font-size: 18px;
+}
+
+.tokenomics_cheese {
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.content_team {
+  width: 550px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+  position: relative;
+}
+
+.image-7, .image-8, .image-9 {
+  width: 150px;
+}
+
+.team_pics {
+  justify-content: center;
+  display: flex;
+}
+
+.team_title {
+  color: #d285ff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-weight: 400;
+  display: flex;
+}
+
+.welcome-copy-copy {
+  color: #d285ff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+}
+
+.team_box {
+  position: relative;
+}
+
+.image-10 {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.image-10:hover {
+  opacity: 1;
+}
+
+.founder, .digital, .solidity {
+  color: #d285ff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  display: none;
+}
+
+.placeholder {
+  opacity: 0;
+  color: #d285ff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+}
+
+.team_01, .team_02, .team_03 {
+  margin-left: 7px;
+  margin-right: 7px;
+  position: relative;
+}
+
+.twitter {
+  width: 35px;
+  height: 35px;
+  background-color: #251535;
+  background-image: url('../images/twitter.svg');
+  background-position: 50%;
+  background-size: auto;
+  border: 0 solid #57147e;
+  border-radius: 100px;
+  padding: 0;
+}
+
+.twitter:hover {
+  border-width: 2px;
+  border-color: #d285ff;
+}
+
+.tg {
+  width: 35px;
+  height: 35px;
+  background-color: #251535;
+  background-image: url('../images/tg.svg');
+  background-position: 50%;
+  background-size: auto;
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  padding: 0;
+}
+
+.tg:hover {
+  border-width: 2px;
+  border-color: #d285ff;
+}
+
+.bscscan {
+  width: 35px;
+  height: 35px;
+  background-color: #251535;
+  background-image: url('../images/bscscan.svg');
+  background-position: 50%;
+  background-size: auto;
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  padding: 0;
+}
+
+.bscscan:hover {
+  border-width: 2px;
+  border-color: #cb85ff;
+}
+
+.dex {
+  width: 35px;
+  height: 35px;
+  background-color: #251535;
+  background-image: url('../images/dexview.svg');
+  background-position: 50%;
+  background-size: auto;
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  padding: 0;
+}
+
+.dex:hover {
+  border-width: 2px;
+  border-color: #cb85ff;
+}
+
+.content_presale {
+  width: 550px;
+  height: 400px;
+  background-color: rgba(19, 10, 35, .84);
+  border: 1px solid #6f3baa;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: none;
+  position: relative;
+}
+
+.button {
+  color: #f0d7ff;
+  background-image: linear-gradient(to right, #64488b, #32234e);
+  border: 2px solid #592378;
+  border-radius: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: VT323, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.button:hover {
+  border-width: 2px;
+  border-color: #b434ff;
+}
+
+.wl {
+  color: #d285ff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-weight: 400;
+  display: flex;
+}
+
+.hc-sc {
+  color: #d285ff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: VT323, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  display: flex;
+}
+
+.pinksale {
+  width: 150px;
+}
+
+.presale_title {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.ham_menu, .menu_overlay {
+  display: none;
+}
+
+.menu_links_desktop {
+  width: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.discover_desk {
+  color: #d285ff;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.discover_desk:hover {
+  color: #d285ff;
+}
+
+.tokenomics_desk {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.tokenomics_desk:hover {
+  color: #d285ff;
+}
+
+.team_desk {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.team_desk:hover {
+  color: #d285ff;
+}
+
+.presale_desk {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.presale_desk:hover {
+  color: #d285ff;
+}
+
+.rewards_desk {
+  color: #4e2a68;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+.rewards_desk:hover {
+  color: #d285ff;
+}
+
+.content_play {
+  width: 550px;
+  height: 400px;
+  background-color: rgba(19, 10, 35, .84);
+  border: 1px solid #6f3baa;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: relative;
+}
+
+.quick-stack {
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.retro_ward_intro {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.div-block-7 {
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.floppy {
+  width: 200px;
+}
+
+.retroward_pic {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+padding-top: 20px; {
+  justify-content: center;
+  display: flex;
+}
+
+.teaser_buttons {
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+
+.retro_para {
+  color: #d285ff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: VT323, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+@media screen and (min-width: 1920px) {
+  .start_menu {
+    display: flex;
+  }
+
+  .logo_big {
+    width: 500px;
+  }
+
+  .start_button {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .content_discover {
+    width: 800px;
+    height: 600px;
+    display: flex;
+  }
+
+  .retropepe_logo {
+    width: 120px;
+  }
+
+  .welcome {
+    margin-top: 0;
+    font-size: 55px;
+  }
+
+  .discover_para {
+    margin-top: 40px;
+    font-size: 23px;
+  }
+
+  .section_main {
+    display: none;
+  }
+
+  .pepe_discover {
+    width: 500px;
+    display: block;
+    top: auto;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+  }
+
+  .content_tokenomics {
+    width: 600px;
+    height: 600px;
+    display: none;
+  }
+
+  .tokenomics_data {
+    height: 600px;
+    padding-top: 103px;
+    padding-bottom: 103px;
+  }
+
+  .tokenomics_info {
+    font-size: 33px;
+  }
+
+  .tokenomics_cheese {
+    height: 600px;
+  }
+
+  .content_team {
+    width: auto;
+    display: none;
+  }
+
+  .image-7, .image-8, .image-9 {
+    width: 200px;
+  }
+
+  .team_pics {
+    margin-top: 47px;
+    margin-bottom: 47px;
+  }
+
+  .team_title {
+    font-size: 50px;
+  }
+
+  .founder {
+    font-size: 44px;
+    display: none;
+  }
+
+  .digital, .solidity, .placeholder {
+    font-size: 44px;
+  }
+
+  .content_presale {
+    width: 800px;
+    height: 600px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: none;
+  }
+
+  .button {
+    padding: 16px 29px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .wl {
+    margin-bottom: 14px;
+    font-size: 55px;
+  }
+
+  .hc-sc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 44px;
+  }
+
+  .pinksale {
+    width: 200px;
+  }
+
+  .presale_info {
+    margin-top: -18px;
+  }
+
+  .discover_desk, .tokenomics_desk, .team_desk {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .presale_desk {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .rewards_desk {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .content_play {
+    width: 800px;
+    height: 600px;
+    display: none;
+  }
+
+  .retro_ward_intro {
+    justify-content: space-around;
+  }
+
+  .retro_para {
+    margin-top: 59px;
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .start_menu {
+    display: flex;
+  }
+
+  .discover_content {
+    width: 320px;
+    height: 320px;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+  }
+
+  .para_mobile {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .tokenomics_content, .team_content, .presale_content, .rewards_content {
+    width: 320px;
+    height: 320px;
+  }
+
+  .menu_left {
+    margin-left: 55px;
+  }
+
+  .content_discover {
+    width: auto;
+    margin-left: 191px;
+    margin-right: 191px;
+    display: flex;
+  }
+
+  .socials {
+    margin-right: 55px;
+  }
+
+  .section_main {
+    display: none;
+  }
+
+  .pepe_discover {
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 50%;
+    right: 0%;
+    transform: translate(-50%);
+  }
+
+  .content_tokenomics, .content_team {
+    display: none;
+  }
+
+  .image-7, .image-8, .image-9, .image-10 {
+    width: 130px;
+  }
+
+  .content_presale {
+    width: 400px;
+    display: none;
+  }
+
+  .content_play {
+    width: 55%;
+    margin-left: 191px;
+    margin-right: 191px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .arcace_border {
+    display: none;
+  }
+
+  .arcade_background, .bg_square_mask {
+    height: 100%;
+  }
+
+  .bg_square {
+    height: 100%;
+    opacity: .3;
+  }
+
+  .start_menu {
+    height: 100%;
+    display: flex;
+  }
+
+  .discover_content {
+    height: 350px;
+    display: flex;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .menu {
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+  .tokenomics {
+    color: #d285ff;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .menu_links {
+    z-index: 5;
+    align-items: center;
+    display: flex;
+    position: absolute;
+  }
+
+  .discover {
+    color: #d285ff;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .logo_small {
+    top: 9%;
+    left: auto;
+  }
+
+  .team, .presale, .rewards {
+    color: #d285ff;
+    font-size: 35px;
+  }
+
+  .hamburger {
+    width: 27px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 124px;
+  }
+
+  .bar {
+    width: 100%;
+    height: 2.5px;
+    background-color: #9414dc;
+    border-radius: 100px;
+    margin-top: 3.5px;
+    margin-bottom: 3.5px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .paragraph {
+    display: none;
+  }
+
+  .para_mobile {
+    display: flex;
+  }
+
+  .tokenomics_content, .team_content, .presale_content, .rewards_content {
+    height: 350px;
+    display: none;
+  }
+
+  .menu_links_mobile {
+    align-items: center;
+    display: none;
+  }
+
+  .discover_mobile, .tokemomics_mobile {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .team_mobile, .presale_mobile, .rewards_mobile {
+    font-size: 35px;
+  }
+
+  .menu_left {
+    justify-content: center;
+    margin-left: 0;
+    display: none;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .section_content {
+    height: 100%;
+  }
+
+  .content_discover {
+    width: 430px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+  }
+
+  .header_logo {
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .socials {
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .soc {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .div-block-5 {
+    margin: 0 25px;
+  }
+
+  .section_main {
+    height: 100%;
+    display: none;
+  }
+
+  .pepe_discover, .content_tokenomics, .content_team {
+    display: none;
+  }
+
+  .placeholder {
+    opacity: 1;
+  }
+
+  .content_presale {
+    display: none;
+  }
+
+  .ham_menu {
+    width: 32px;
+    height: 25px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .ham_bar {
+    width: 100%;
+    height: 4px;
+    background-color: #9250ec;
+    border-radius: 100px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .menu_overlay {
+    width: 100%;
+    height: 100vh;
+    opacity: .78;
+    background-color: #000;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .menu_links_desktop {
+    z-index: 5;
+    align-items: center;
+    display: none;
+    position: absolute;
+  }
+
+  .discover_desk {
+    color: #6800b3;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .tokenomics_desk {
+    color: #8d058d;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .team_desk {
+    color: #6800b3;
+    font-size: 35px;
+  }
+
+  .presale_desk {
+    color: #8d058d;
+    font-size: 35px;
+  }
+
+  .rewards_desk {
+    color: #6800b3;
+    font-size: 35px;
+  }
+
+  .content_play {
+    width: 430px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .arcace_border {
+    display: none;
+  }
+
+  .top_h_right {
+    height: 39px;
+  }
+
+  .top_v_right, .top_v_left {
+    width: 39px;
+  }
+
+  .top_h_left, .bottom_h_right {
+    height: 39px;
+  }
+
+  .bottom_v_right, .bottom_v_left {
+    width: 39px;
+  }
+
+  .bttom_h_right {
+    width: auto;
+    height: 39px;
+  }
+
+  .top_border, .bottom_border {
+    height: 29px;
+  }
+
+  .left_border, .right_border {
+    width: 29px;
+  }
+
+  .arcade_background, .bg_square_mask {
+    height: 100%;
+  }
+
+  .bg_square {
+    height: 100%;
+    opacity: .58;
+  }
+
+  .start_menu {
+    height: 100%;
+    display: flex;
+  }
+
+  .discover_content {
+    width: 100%;
+    height: 325px;
+    margin-left: 43px;
+    margin-right: 43px;
+    display: flex;
+  }
+
+  .logo_big {
+    width: 300px;
+  }
+
+  .main {
+    z-index: 100;
+    flex-direction: row;
+  }
+
+  .menu {
+    z-index: 0;
+    display: none;
+  }
+
+  .menu_links {
+    display: flex;
+  }
+
+  .hamburger {
+    z-index: 500;
+    width: 27px;
+    height: auto;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: flex;
+    position: absolute;
+    top: 16%;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%);
+  }
+
+  .bar {
+    width: 100%;
+    height: 2.5px;
+    background-color: #d285ff;
+    border-radius: 100px;
+    margin-top: 3.5px;
+    margin-bottom: 3.5px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+
+  .para_mobile {
+    font-size: 18px;
+    display: flex;
+  }
+
+  .tokenomics_content, .team_content, .presale_content, .rewards_content {
+    width: 100%;
+    height: 325px;
+    margin-left: 43px;
+    margin-right: 43px;
+    display: none;
+  }
+
+  .menu_links_mobile {
+    display: flex;
+  }
+
+  .tokemomics_mobile, .team_mobile, .presale_mobile, .rewards_mobile {
+    color: #d285ff;
+  }
+
+  .menu_left {
+    display: none;
+  }
+
+  .section_content {
+    height: auto;
+    display: flex;
+  }
+
+  .content_discover {
+    width: auto;
+    display: flex;
+  }
+
+  .header_logo {
+    margin-top: 31px;
+    margin-bottom: 31px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .retropepe_logo {
+    width: 70px;
+  }
+
+  .socials {
+    margin-bottom: 25px;
+  }
+
+  .soc {
+    display: flex;
+  }
+
+  .discover_para {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .section_main {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .content_tokenomics {
+    width: 100%;
+    display: none;
+  }
+
+  .tokenomics_data {
+    height: 300px;
+    padding: 31px 49px;
+    display: flex;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .tokenomics_cheese {
+    height: 300px;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .content_team {
+    width: 100%;
+    display: none;
+  }
+
+  .image-7, .image-8, .image-9, .image-10 {
+    width: 90px;
+  }
+
+  .founder, .digital, .solidity, .placeholder {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .content_presale {
+    width: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    display: none;
+  }
+
+  .wl {
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .pinksale {
+    width: 130px;
+    margin-top: 15px;
+  }
+
+  .menu_links_desktop {
+    display: none;
+  }
+
+  .content_play {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    display: none;
+  }
+
+  .retro_ward_intro {
+    height: 100%;
+  }
+
+  .floppy {
+    width: 150px;
+  }
+
+  .retro_para {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+
